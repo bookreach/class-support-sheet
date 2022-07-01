@@ -28,13 +28,13 @@
 
 	<script src="general.js"></script>
 
-	<title>授業向け教材資料提供のための打ち合わせシート Ver.3</title>
+	<title>授業向け教材資料提供のための打ち合わせシート Ver.2</title>
 </head>
 
 <body>
 	<header>
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="#">授業向け教材資料提供のための打ち合わせシート Ver.3</a>
+			<a class="navbar-brand" href="#">授業向け教材資料提供のための打ち合わせシート Ver.2</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
 				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -110,37 +110,6 @@
 
 		<div id="all-wrap" class="">
 	
-			<div id="menu-wrap" class="mb-2">
-				<div class="small"><span id="display-prior" class="btn btn-sm btn-secondary change-display-item">* 事前入力推奨項目のみを表示</span></div>
-				<div class="menu-item">
-					<div id="print-sheet" class="btn btn-sm btn-outline-secondary">印刷</div>
-				</div>
-				<div class="dropdown menu-item">
-					<button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">
-						出力
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a id="output-sheet-tsv" class="dropdown-item" href="#">タブ区切りファイル（.tsv）で出力</a>
-						<a style="display:none;" id="downloader-tsv" href="#"></a>
-						<!-- <a class="dropdown-item" href="#">エクセルファイル（.xlsx）で出力</a> -->
-						<a id="output-sheet-json" class="dropdown-item" href="#">JSONファイル（.json）で出力（再読み込み可能形式）</a>
-						<a style="display:none;" id="downloader-json" href="#"></a>
-					</div>
-				</div>				
-				<div class="menu-item">
-					<div class="input-group small">
-						<div id="input-sheet-json" class="custom-file">
-							<input id="open-user-sheet" type="file" class="custom-file-input" accept=".json">
-							<label class="custom-file-label"  for="open-user-sheet" data-browse="参照">既存シート選択（JSON形式）</label>
-						</div>
-						<div class="input-group-append">
-							<button id="show-user-sheet" type="button" class="btn btn-outline-secondary btn-sm ">表示</button>
-						</div>
-					</div>
-				</div>
-
-			</div>
 			<div id="hearing-wrap">
 				<div id="hearing-item-wrap" class="level-0">
 				</div>
@@ -181,32 +150,11 @@
 				<h5>シート項目への入力</h5>
 				<ul>
 					<li>よりよい授業向け教材資料提供のために、「(A) 授業に関する情報」「(B) 資料に関する情報」「(C) 提供に関する情報」の各項目を埋めてください。</li>
-					<li>このシートは、教員と学校司書が共同で徐々に作り上げていくものです。</li>
-						<ul>
-							<li>最初から完全なものを作る必要はありません。</li>
-							<li>「*」がついている箇所は、主に教員向けの事前入力推奨項目です。可能な限り埋めておくと、より円滑な打ち合わせが期待できます。</li>
-						</ul>
 					<li>入力欄にフォーカスする、もしくは項目名をクリックすると、回答の書き方やサンプルが右側に表示されます。</li>
 					</li>
 					<li>一部の入力項目については、入力欄にフォーカスすると、選択肢や回答フォーマットがドロップダウンメニューで表示されます。なるべく選択肢から選ぶようにしてください。該当する項目がない場合は、自由に記述してください。</li>
 				</ul>
-				<h5>ファイルの保存と読み込み</h5>
-				<ul>
-					<li>シートに入力された内容は一切サーバに送っていません。シートを閉じると記入内容は消去されます。</li>
-					<li>入力データは「印刷」や「出力」機能を使い、保存してください。
-						<ul>
-							<li><strong>印刷</strong>：画面をそのまま印刷します。</li>
-							<li><strong>出力＞タブ区切りファイルで出力</strong>：tsv形式で出力します。表計算ソフトで読み込むと見やすく表示できます。なお、再読み込みはできません。</li>
-							<li><strong>出力＞JSONファイルで出力</strong>：必要な情報を保持し、再読み込み可能な形で保存します。継続的にシートを更新しながら使う場合に便利です。</li>
-						</ul>
-					<li>保存したJSON形式のシートは再読み込みができます。
-						<ul>
-							<li><strong>参照</strong>：読み込みたいJSONファイルを選択します。</li>
-							<li><strong>表示</strong>：選択したJSONファイルを読み込み、表示します。画面に表示されている情報は消去されるので注意してください。</li>
-						</ul>
-					</li>
-					</li>
-				</ul>
+
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -227,8 +175,7 @@
 			</div>
 			<div class="modal-body">
 				<ul>
-					<li>Ver.3: 教員によるフィードバックを反映</li>
-					<li><a href="./v2/index.html" target="_blank">Ver.2</a>: 学校図書館職員によるフィードバックを反映</li>
+					<li>Ver.2: 学校図書館職員経験者によるフィードバックを反映</li>
 					<li><a href="./v1/index.html" target="_blank">Ver.1</a>: 先行研究（宮田・矢田・浅石, 2018; 浅石・矢田・宮田, 2020）をベースに設計</li>
 				</ul>
 			</div>
@@ -325,8 +272,8 @@
 			"type": "nonterminal",
 			"name": "授業に関する情報",
 			"form": {
-			"prior": 1
-			}
+			"prior": 0
+		}
 		},
 		{
 			"id": "A-01",
@@ -337,7 +284,7 @@
 			"form": {
 				"dependence": "",
 				"importance": 3,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "select",
 				"form-main-default": "",
 				"form-main-option": "小1／小2／小3／小4／小5／小6／中1／中2／中3／高1／高2／高3",
@@ -359,7 +306,7 @@
 			"form": {
 				"dependence": "A-01",
 				"importance": 3,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "select",
 				"form-main-default": "",
 				"form-main-option": "国語／算数／数学／理科／社会／外国語／家庭／音楽／保健体育／図工／美術／工芸／書道／技術／情報科／生活科／道徳／総合／特別活動",
@@ -379,7 +326,7 @@
 			"type": "nonterminal",
 			"name": "教科書",
 			"form": {
-					"prior": 1
+					"prior": 0
 		}
 		},
 		{
@@ -391,7 +338,7 @@
 			"form": {
 				"dependence": "A-02",
 				"importance": 2,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "select",
 				"form-main-default": "",
 				"form-main-option": "東京書籍",
@@ -413,7 +360,7 @@
 			"form": {
 				"dependence": "A-03-a",
 				"importance": 2,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "select",
 				"form-main-default": "",
 				"form-main-option": "",
@@ -457,7 +404,7 @@
 			"form": {
 				"dependence": "",
 				"importance": 1,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "input",
 				"form-main-default": "",
 				"form-main-option": "",
@@ -509,7 +456,7 @@
 				"form-sub": "",
 				"form-sub-default": "",
 				"form-sub-answer": "",
-				"description": "授業のきっかけ、年間の授業全体における本授業の位置づけ、時期的背景など補足的な情報を記入してください。",
+				"description": "授業のきっかけ、時期的背景など補足的な情報を記入してください。",
 				"example": "ヘルスリテラシーを育てるためのカリキュラム研究の一環[活用DB: A0003]／理科の修学旅行（秩父・長瀞地方の地形と地質の学習）の事前学習[活用DB: A0086]",
 				"memo": ""
 			}
@@ -523,7 +470,7 @@
 			"form": {
 				"dependence": "",
 				"importance": 3,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "select",
 				"form-main-default": "",
 				"form-main-option": "2021年○月○旬〜2021年○月○旬／未定",
@@ -543,7 +490,7 @@
 			"type": "nonterminal",
 			"name": "活動",
 			"form": {
-			"prior": 1
+			"prior": 0
 		}
 		},
 		{
@@ -599,7 +546,7 @@
 			"form": {
 				"dependence": "",
 				"importance": 3,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "checkbox",
 				"form-main-default": "",
 				"form-main-option": "調べ学習／読み聞かせ・ブックトーク／その他／未定",
@@ -685,7 +632,7 @@
 			"type": "nonterminal",
 			"name": "授業者",
 			"form": {
-				"prior": 1
+				"prior": 0
 		}
 		},
 		{
@@ -697,7 +644,7 @@
 			"form": {
 				"dependence": "",
 				"importance": 3,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "radio",
 				"form-main-default": "",
 				"form-main-option": "経験あり／経験なし",
@@ -761,7 +708,7 @@
 			"type": "nonterminal",
 			"name": "学習者",
 			"form": {
-				"prior": 1
+				"prior": 0
 		}
 		},
 		{
@@ -773,7 +720,7 @@
 			"form": {
 				"dependence": "",
 				"importance": 3,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "select",
 				"form-main-default": "",
 				"form-main-option": "1／2／3／4／5／6／7／8／9／10",
@@ -795,7 +742,7 @@
 			"form": {
 				"dependence": "",
 				"importance": 3,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "input",
 				"form-main-default": "〜人",
 				"form-main-option": "",
@@ -822,7 +769,7 @@
 				"form-main-default": "",
 				"form-main-option": "",
 				"form-main-answer": "",
-				"form-sub": "textarea",
+				"form-sub": "",
 				"form-sub-default": "",
 				"form-sub-answer": "",
 				"description": "学習者の調べ学習の経験や様子を記入してください。また、授業に関連した事前学習に行っている場合や過去に関連した単元の授業を行っている場合は、その内容を記入してください。",
@@ -859,7 +806,7 @@
 			"type": "nonterminal",
 			"name": "資料に関する情報",
 			"form": {
-				"prior": 1
+				"prior": 0
 			}
 		},
 		{
@@ -871,7 +818,7 @@
 			"form": {
 				"dependence": "",
 				"importance": 3,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "input",
 				"form-main-default": "",
 				"form-main-option": "",
@@ -893,7 +840,7 @@
 			"form": {
 				"dependence": "",
 				"importance": 1,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "textarea",
 				"form-main-default": "",
 				"form-main-option": "",
@@ -956,9 +903,7 @@
 			"level": 2,
 			"type": "nonterminal",
 			"name": "図書の属性",
-			"form": {
-				"prior": 1
-			}
+			"form": {}
 		},
 		{
 			"id": "B-05-a",
@@ -991,16 +936,16 @@
 			"form": {
 				"dependence": "",
 				"importance": 1,
-				"prior": 1,
+				"prior": 0,
 				"form-main": "checkbox",
 				"form-main-default": "",
-				"form-main-option": "哲学／歴史・地理／社会科学／自然科学／技術／産業／芸術／言語／文学／文学（古典）／伝記／その他／未定",
+				"form-main-option": "哲学／歴史・地理・伝記／社会科学／自然科学／技術／産業／芸術／言語／文学／文学（古典）／その他／未定",
 				"form-main-answer": "",
 				"form-sub": "input",
 				"form-sub-default": "",
 				"form-sub-answer": "",
 				"description": "図書の内容カテゴリーを選択してください（複数可）。より詳細な内容が決まっている場合、詳細欄に記入してください。",
-				"example": "江戸時代が舞台の小説[活用DB: A0001]／有名な数学者の伝記[活用DB: A0032]／科学読み物",
+				"example": "江戸時代が舞台の小説[活用DB: A0001]／有名な数学者の伝記[活用DB: A0032]",
 				"memo": ""
 			}
 		},
@@ -1110,7 +1055,7 @@
 				"form-sub-default": "",
 				"form-sub-answer": "",
 				"description": "図書以外に用意して欲しい資料を選択してください。「その他」を選択した場合、詳細欄に具体的に記入してください。避けて欲しい資料形態についても、詳細欄に記入してください。",
-				"example": "（その他の例）電化製品のカタログ[活用DB: A0042]／調べ学習の前年度の作品[活用DB: A0062]／今回はインターネットは使いません",
+				"example": "（その他の例）電化製品のカタログ[活用DB: A0042]、調べ学習の前年度の作品[活用DB: A0062]、今回はインターネットは使いません",
 				"memo": ""
 			}
 		},
@@ -1228,7 +1173,7 @@
 				"form-sub-default": "",
 				"form-sub-answer": "",
 				"description": "図書館職員による授業当日のサポートに関する希望を選択してください（複数可）。具体的に決まっていれば、詳細欄に記入してください。",
-				"example": "（チームティーチングの例）授業中、生徒の相談に乗り、文献の検索を手伝ってほしい。／（図書館利用教育の例）分類番号の見方を児童に教えてほしい、図鑑や事典の使い方を指導してほしい。",
+				"example": "（図書館利用教育の例）分類番号の見方を児童に教えてほしい、図鑑や事典の使い方を指導してほしい。",
 				"memo": ""
 			}
 		},
@@ -1255,6 +1200,7 @@
 			}
 		}
 	]
+
 }
 
 </script>

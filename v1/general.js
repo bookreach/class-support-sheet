@@ -287,7 +287,7 @@ $(document).on('click', '#output-sheet', function () {
   let url = (window.URL || window.webkitURL).createObjectURL(blob);
 
   let downloader = document.getElementById('downloader');
-  downloader.download = 'hearing-sheet.tsv';
+  downloader.download = 'collab-sheet.tsv';
   downloader.href = url;
 
   // ダウンロードリンクをクリックする
